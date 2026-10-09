@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Calendar, Sparkles, Heart, Star, Moon } from 'lucide-react';
+import { Calendar, Sparkles, Heart } from 'lucide-react';
 import SectionHeading from './SectionHeading';
 import { octoberData } from '@/data/memories';
 

@@ -14,27 +14,39 @@ interface FloatingItem {
   opacity: number;
 }
 
+interface ClickHeart {
+  id: number;
+  x: number;
+  y: number;
+  targetY: number;
+  targetX: number;
+  targetRotate: number;
+  icon: string;
+}
+
 const BLUE_HEART_ICONS = ['💙', '🩵', '🤍', '✨', '🌟', '🎂', '💫', '🌙', '💙'];
 
 export default function FloatingHearts() {
   const [ambientHearts, setAmbientHearts] = useState<FloatingItem[]>([]);
-  const [clickHearts, setClickHearts] = useState<
-    { id: number; x: number; y: number; icon: string }[]
-  >([]);
+  const [clickHearts, setClickHearts] = useState<ClickHeart[]>([]);
 
   useEffect(() => {
-    // Generate initial ambient particles across the screen
-    const initial: FloatingItem[] = Array.from({ length: 18 }).map((_, i) => ({
-      id: i,
-      x: Math.random() * 96 + 2, // percentage across viewport
-      y: Math.random() * 100,
-      size: Math.floor(Math.random() * 14) + 14, // 14px to 28px
-      duration: Math.random() * 12 + 14, // 14s to 26s
-      delay: Math.random() * 5,
-      icon: BLUE_HEART_ICONS[Math.floor(Math.random() * BLUE_HEART_ICONS.length)],
-      opacity: Math.random() * 0.4 + 0.25,
-    }));
-    setAmbientHearts(initial);
+    // Generate initial ambient particles across the screen asynchronously to avoid cascading renders
+    const timer = setTimeout(() => {
+      const initial: FloatingItem[] = Array.from({ length: 18 }).map((_, i) => ({
+        id: i,
+        x: ((i * 5.5 + 3) % 94) + 2,
+        y: (i * 7.3) % 100,
+        size: (i % 8) * 2 + 14,
+        duration: (i % 6) * 2 + 16,
+        delay: (i % 5) * 1.2,
+        icon: BLUE_HEART_ICONS[i % BLUE_HEART_ICONS.length],
+        opacity: 0.25 + (i % 4) * 0.08,
+      }));
+      setAmbientHearts(initial);
+    }, 50);
+
+    return () => clearTimeout(timer);
   }, []);
 
   // Spawn romantic blue heart burst whenever user clicks anywhere on screen
@@ -45,10 +57,13 @@ export default function FloatingHearts() {
       return;
     }
 
-    const newHearts = Array.from({ length: 3 }).map((_, i) => ({
+    const newHearts: ClickHeart[] = Array.from({ length: 3 }).map((_, i) => ({
       id: Date.now() + i + Math.random(),
       x: e.clientX + (Math.random() * 30 - 15),
       y: e.clientY + (Math.random() * 20 - 10),
+      targetY: -80 - Math.random() * 40,
+      targetX: (Math.random() - 0.5) * 60,
+      targetRotate: (Math.random() - 0.5) * 40,
       icon: BLUE_HEART_ICONS[Math.floor(Math.random() * 4)],
     }));
 
@@ -106,9 +121,9 @@ export default function FloatingHearts() {
             animate={{
               scale: [0.3, 1.4, 1.1],
               opacity: [1, 0.9, 0],
-              y: -80 - Math.random() * 40,
-              x: (Math.random() - 0.5) * 60,
-              rotate: (Math.random() - 0.5) * 40,
+              y: heart.targetY,
+              x: heart.targetX,
+              rotate: heart.targetRotate,
             }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}

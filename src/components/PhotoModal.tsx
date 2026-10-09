@@ -3,7 +3,7 @@
 import React, { useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, Heart, Sparkles, MapPin, Calendar, Star, Film, Volume2, Play } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Heart, Sparkles, MapPin, Calendar, Star, Film } from 'lucide-react';
 import { Memory } from '@/types';
 
 interface PhotoModalProps {

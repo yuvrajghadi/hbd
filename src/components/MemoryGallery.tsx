@@ -14,42 +14,65 @@ export default function MemoryGallery() {
   const [selectedMemory, setSelectedMemory] = useState<Memory | null>(null);
   const [activeFilter, setActiveFilter] = useState<'all' | 'video' | 'core' | 'candid'>('all');
   const [visibleCount, setVisibleCount] = useState<number>(14);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [source, setSource] = useState<'mongodb' | 'fallback'>('fallback');
   const [fetchError, setFetchError] = useState<string | null>(null);
 
-  // Fetch media from MongoDB Atlas API endpoint
-  const loadMedia = useCallback(async () => {
-    setIsLoading(true);
-    setFetchError(null);
-    try {
-      const res = await fetch('/api/media', { cache: 'no-store' });
-      if (!res.ok) {
-        throw new Error(`Server returned status ${res.status}`);
-      }
-      const json = await res.json();
-      if (json.success && Array.isArray(json.data) && json.data.length > 0) {
-        setMediaItems(json.data);
-        setSource(json.source || 'fallback');
-      } else {
-        // Fallback to local curated memories
-        setMediaItems(fallbackMemories);
-        setSource('fallback');
-      }
-    } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : 'Could not fetch media';
-      setFetchError(message);
-      // Seamlessly keep fallback memories so website is never broken
-      setMediaItems(fallbackMemories);
-      setSource('fallback');
-    } finally {
-      setIsLoading(false);
-    }
+  useEffect(() => {
+    let ignore = false;
+    fetch('/api/media', { cache: 'no-store' })
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((json) => {
+        if (!ignore && json?.success && Array.isArray(json.data) && json.data.length > 0) {
+          setMediaItems(json.data);
+          setSource(json.source || 'fallback');
+          setFetchError(null);
+        }
+      })
+      .catch((err: unknown) => {
+        if (!ignore) {
+          const msg = err instanceof Error ? err.message : 'Fetch error';
+          setFetchError(msg);
+          setMediaItems(fallbackMemories);
+          setSource('fallback');
+        }
+      });
+
+    return () => {
+      ignore = true;
+    };
   }, []);
 
-  useEffect(() => {
-    loadMedia();
-  }, [loadMedia]);
+  const loadMedia = useCallback(() => {
+    setIsLoading(true);
+    fetch('/api/media', { cache: 'no-store' })
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((json) => {
+        if (json?.success && Array.isArray(json.data) && json.data.length > 0) {
+          setMediaItems(json.data);
+          setSource(json.source || 'fallback');
+          setFetchError(null);
+        } else {
+          setMediaItems(fallbackMemories);
+          setSource('fallback');
+        }
+      })
+      .catch((err: unknown) => {
+        const msg = err instanceof Error ? err.message : 'Fetch error';
+        setFetchError(msg);
+        setMediaItems(fallbackMemories);
+        setSource('fallback');
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, []);
 
   const videoCount = mediaItems.filter((m) => m.mediaType === 'video' || Boolean(m.videoUrl)).length;
 

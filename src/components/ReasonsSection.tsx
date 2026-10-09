@@ -1,11 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, Sparkles, RefreshCw, Eye } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Heart, Sparkles, Eye } from 'lucide-react';
 import SectionHeading from './SectionHeading';
 import { loveReasons, siteConfig } from '@/data/memories';
-import { LoveReason } from '@/types';
 
 export default function ReasonsSection() {
   const [flippedIds, setFlippedIds] = useState<number[]>([]);

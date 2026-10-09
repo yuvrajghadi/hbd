@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { seedMediaRecords } from '@/lib/db/media';
 import { isMongoConfigured } from '@/lib/mongodb';
 

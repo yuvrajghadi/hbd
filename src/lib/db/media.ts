@@ -1,4 +1,4 @@
-import { getMongoDb, isMongoConfigured, testMongoConnection } from '@/lib/mongodb';
+import { getMongoDb, isMongoConfigured } from '@/lib/mongodb';
 import { memories as defaultMemories } from '@/data/memories';
 import { Memory } from '@/types';
 

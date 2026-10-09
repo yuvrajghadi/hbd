@@ -11,7 +11,7 @@ interface HeroProps {
   isUnlocked: boolean;
 }
 
-export default function Hero({ onUnlock, isUnlocked }: HeroProps) {
+export default function Hero({ onUnlock }: HeroProps) {
   const triggerBirthdayCelebration = () => {
     // Elegant blue confetti, stars, and sparkles based on user's exact palette
     const count = 180;
