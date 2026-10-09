@@ -11,7 +11,10 @@ export type AnimationType =
 export type LayoutSpan = 'normal' | 'wide' | 'tall' | 'featured' | 'full';
 
 export interface Memory {
+  _id?: string;
   id: number;
+  filename?: string;
+  url?: string;
   image: string;
   mediaType?: 'photo' | 'video';
   videoUrl?: string;
@@ -25,6 +28,11 @@ export interface Memory {
   storySnippet?: string;
   category?: 'core' | 'video' | 'candid' | 'special' | 'all';
   highlight?: boolean;
+  displayOrder?: number;
+  isPortrait?: boolean;
+  aspectRatio?: string;
+  createdAt?: string | Date;
+  updatedAt?: string | Date;
 }
 
 export interface StoryTimelineItem {

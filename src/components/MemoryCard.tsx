@@ -123,15 +123,18 @@ export default function MemoryCard({ memory, onSelect, index }: MemoryCardProps)
       ? 'col-span-1 sm:col-span-2'
       : 'col-span-1';
 
-  // Aspect ratio based on layout span
+  // Determine if media is portrait or landscape
+  const isPortrait = memory.isPortrait ?? (memory.layoutSpan === 'tall');
+
+  // Aspect ratio based on orientation and layout span
   const aspectClass =
-    memory.layoutSpan === 'tall'
-      ? 'aspect-[3/4]'
-      : memory.layoutSpan === 'wide'
+    memory.layoutSpan === 'wide'
       ? 'aspect-[16/9]'
       : memory.layoutSpan === 'featured'
       ? 'aspect-[16/10]'
-      : 'aspect-4/3';
+      : isPortrait
+      ? 'aspect-[3/4]'
+      : 'aspect-[4/3]';
 
   return (
     <motion.div
