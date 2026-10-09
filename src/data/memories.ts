@@ -340,10 +340,10 @@ export const romanticQuizzes: QuizQuestion[] = [
  * 📸 PHOTOS & VIDEOS MEMORIES DATA
  * =========================================================================
  * Natural, heartfelt descriptions without place names!
- * Includes all 6 videos and 76 photos with rich layouts.
+ * Includes all 6 videos and 66 photos with rich layouts from public/photos.
  */
 export const memories: Memory[] = [
-  {
+{
     "id": 1,
     "displayOrder": 1,
     "filename": "video_01.mp4",
@@ -792,166 +792,6 @@ export const memories: Memory[] = [
   {
     "id": 23,
     "displayOrder": 23,
-    "filename": "mem_17.jpg",
-    "url": "/photos/mem_17.jpg",
-    "image": "/photos/mem_17.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "wide",
-    "title": "Things I’ll Never Forget",
-    "caption": "Forever grateful for you, my baby.",
-    "description": "Holding on to these memories like treasures.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "fade",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Holding on to these memories like treasures.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 24,
-    "displayOrder": 24,
-    "filename": "mem_18.jpg",
-    "url": "/photos/mem_18.jpg",
-    "image": "/photos/mem_18.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Little Things That Mean Everything",
-    "caption": "Small smiles, big memories.",
-    "description": "Life feels complete when you are smiling beside me.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "slide-left",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Life feels complete when you are smiling beside me.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 25,
-    "displayOrder": 25,
-    "filename": "mem_19.jpg",
-    "url": "/photos/mem_19.jpg",
-    "image": "/photos/mem_19.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "tall",
-    "title": "Unfiltered Innocence",
-    "caption": "Tu khup natkhat ani god aahes baby 🤌🏻",
-    "description": "A cute candid capture of your purest self.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "slide-right",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "A cute candid capture of your purest self.",
-    "isPortrait": true,
-    "aspectRatio": "3/4"
-  },
-  {
-    "id": 26,
-    "displayOrder": 26,
-    "filename": "mem_20.jpg",
-    "url": "/photos/mem_20.jpg",
-    "image": "/photos/mem_20.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "The Way You Look At Me",
-    "caption": "Tuzya hasnyane maza divas banun jato.",
-    "description": "Looking back at these moments brings an instant smile to my face.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "rotate",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Looking back at these moments brings an instant smile to my face.",
-    "isPortrait": true,
-    "aspectRatio": "3/4"
-  },
-  {
-    "id": 27,
-    "displayOrder": 27,
-    "filename": "mem_21.jpg",
-    "url": "/photos/mem_21.jpg",
-    "image": "/photos/mem_21.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Peace in Chaos",
-    "caption": "No one understands me like you do 💙",
-    "description": "The purest definition of home is wherever you are.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "flip-3d",
-    "category": "special",
-    "highlight": false,
-    "storySnippet": "The purest definition of home is wherever you are.",
-    "isPortrait": true,
-    "aspectRatio": "3/4"
-  },
-  {
-    "id": 28,
-    "displayOrder": 28,
-    "filename": "mem_22.jpg",
-    "url": "/photos/mem_22.jpg",
-    "image": "/photos/mem_22.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "tall",
-    "title": "My Favorite Human",
-    "caption": "I see my entire future in your eyes.",
-    "description": "Nothing compares to the comfort of your presence.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "blur-zoom",
-    "category": "candid",
-    "highlight": true,
-    "storySnippet": "Nothing compares to the comfort of your presence.",
-    "isPortrait": true,
-    "aspectRatio": "3/4"
-  },
-  {
-    "id": 29,
-    "displayOrder": 29,
-    "filename": "mem_23.jpg",
-    "url": "/photos/mem_23.jpg",
-    "image": "/photos/mem_23.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Pure Hugs & Warmth",
-    "caption": "Your happiness is my highest priority in life.",
-    "description": "Every detail of this memory is etched in my heart forever.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "polaroid",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Every detail of this memory is etched in my heart forever.",
-    "isPortrait": true,
-    "aspectRatio": "3/4"
-  },
-  {
-    "id": 30,
-    "displayOrder": 30,
-    "filename": "mem_24.jpg",
-    "url": "/photos/mem_24.jpg",
-    "image": "/photos/mem_24.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "The Sweetest Laughter",
-    "caption": "Majya sathi tu khup special aahes, baby.",
-    "description": "Every time I look at this photo, I remember how lucky I am to have you.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "floating",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Every time I look at this photo, I remember how lucky I am to have you.",
-    "isPortrait": true,
-    "aspectRatio": "3/4"
-  },
-  {
-    "id": 31,
-    "displayOrder": 31,
     "filename": "mem_25.jpg",
     "url": "/photos/mem_25.jpg",
     "image": "/photos/mem_25.jpg",
@@ -970,8 +810,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 32,
-    "displayOrder": 32,
+    "id": 24,
+    "displayOrder": 24,
     "filename": "mem_26.jpg",
     "url": "/photos/mem_26.jpg",
     "image": "/photos/mem_26.jpg",
@@ -990,8 +830,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 33,
-    "displayOrder": 33,
+    "id": 25,
+    "displayOrder": 25,
     "filename": "mem_27.jpg",
     "url": "/photos/mem_27.jpg",
     "image": "/photos/mem_27.jpg",
@@ -1010,8 +850,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 34,
-    "displayOrder": 34,
+    "id": 26,
+    "displayOrder": 26,
     "filename": "mem_28.jpg",
     "url": "/photos/mem_28.jpg",
     "image": "/photos/mem_28.jpg",
@@ -1030,8 +870,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 35,
-    "displayOrder": 35,
+    "id": 27,
+    "displayOrder": 27,
     "filename": "mem_29.jpg",
     "url": "/photos/mem_29.jpg",
     "image": "/photos/mem_29.jpg",
@@ -1050,8 +890,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 36,
-    "displayOrder": 36,
+    "id": 28,
+    "displayOrder": 28,
     "filename": "mem_30.jpg",
     "url": "/photos/mem_30.jpg",
     "image": "/photos/mem_30.jpg",
@@ -1070,8 +910,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 37,
-    "displayOrder": 37,
+    "id": 29,
+    "displayOrder": 29,
     "filename": "mem_31.jpg",
     "url": "/photos/mem_31.jpg",
     "image": "/photos/mem_31.jpg",
@@ -1090,8 +930,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 38,
-    "displayOrder": 38,
+    "id": 30,
+    "displayOrder": 30,
     "filename": "mem_32.jpg",
     "url": "/photos/mem_32.jpg",
     "image": "/photos/mem_32.jpg",
@@ -1110,8 +950,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 39,
-    "displayOrder": 39,
+    "id": 31,
+    "displayOrder": 31,
     "filename": "mem_33.jpg",
     "url": "/photos/mem_33.jpg",
     "image": "/photos/mem_33.jpg",
@@ -1130,148 +970,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 40,
-    "displayOrder": 40,
-    "filename": "mem_34.jpg",
-    "url": "/photos/mem_34.jpg",
-    "image": "/photos/mem_34.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Pure Love, Zero Filters",
-    "caption": "Tu khuppp god aahes mast ekdum hasmukh childish 🤌🫶",
-    "description": "Being loved by you is the greatest privilege I could ever ask for.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "slide-left",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Being loved by you is the greatest privilege I could ever ask for.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 41,
-    "displayOrder": 41,
-    "filename": "mem_35.jpg",
-    "url": "/photos/mem_35.jpg",
-    "image": "/photos/mem_35.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Your Beautiful Face",
-    "caption": "I am always with you in every situation 🫶🏻",
-    "description": "Sharing food, talking nonsense, or just sitting in silence—it is all perfect.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "slide-right",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Sharing food, talking nonsense, or just sitting in silence—it is all perfect.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 42,
-    "displayOrder": 42,
-    "filename": "mem_36.jpg",
-    "url": "/photos/mem_36.jpg",
-    "image": "/photos/mem_36.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Cutest Natkhat Expressions",
-    "caption": "U r kind hearted I never see the person like you fr i swear 🤍",
-    "description": "Your gentleness is something the world needs more of.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "rotate",
-    "category": "special",
-    "highlight": true,
-    "storySnippet": "Your gentleness is something the world needs more of.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 43,
-    "displayOrder": 43,
-    "filename": "mem_37.jpg",
-    "url": "/photos/mem_37.jpg",
-    "image": "/photos/mem_37.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "wide",
-    "title": "The Day I Realized",
-    "caption": "Just golu ye mhan mag lagech tuzya madatila hajar.",
-    "description": "Your joy is my favorite blessing in this world.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "flip-3d",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Your joy is my favorite blessing in this world.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 44,
-    "displayOrder": 44,
-    "filename": "mem_38.jpg",
-    "url": "/photos/mem_38.jpg",
-    "image": "/photos/mem_38.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Quiet Promises",
-    "caption": "Words nahit aahe express karnya sathi yevdhi tu mast chan aahes yaaar.",
-    "description": "Celebrating you today, tomorrow, and every single day forever.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "blur-zoom",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Celebrating you today, tomorrow, and every single day forever.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 45,
-    "displayOrder": 45,
-    "filename": "mem_39.jpg",
-    "url": "/photos/mem_39.jpg",
-    "image": "/photos/mem_39.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "Holding Your Hand",
-    "caption": "Tu naslis tr mi tr pagal hoin yaar 🥺",
-    "description": "A quiet reminder of how sweet life became with you in it.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "polaroid",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "A quiet reminder of how sweet life became with you in it.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 46,
-    "displayOrder": 46,
-    "filename": "mem_40.jpg",
-    "url": "/photos/mem_40.jpg",
-    "image": "/photos/mem_40.jpg",
-    "mediaType": "photo",
-    "layoutSpan": "normal",
-    "title": "The OG Smile Reborn",
-    "caption": "Khup god aahes tu yedu 🫶",
-    "description": "Holding on to these memories like treasures.",
-    "date": "Our Sweet Moments",
-    "location": "Little Things That Mean Everything",
-    "animation": "floating",
-    "category": "candid",
-    "highlight": false,
-    "storySnippet": "Holding on to these memories like treasures.",
-    "isPortrait": false,
-    "aspectRatio": "4/3"
-  },
-  {
-    "id": 47,
-    "displayOrder": 47,
+    "id": 32,
+    "displayOrder": 32,
     "filename": "mem_41.jpg",
     "url": "/photos/mem_41.jpg",
     "image": "/photos/mem_41.jpg",
@@ -1290,8 +990,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 48,
-    "displayOrder": 48,
+    "id": 33,
+    "displayOrder": 33,
     "filename": "mem_42.jpg",
     "url": "/photos/mem_42.jpg",
     "image": "/photos/mem_42.jpg",
@@ -1310,8 +1010,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 49,
-    "displayOrder": 49,
+    "id": 34,
+    "displayOrder": 34,
     "filename": "mem_43.jpg",
     "url": "/photos/mem_43.jpg",
     "image": "/photos/mem_43.jpg",
@@ -1330,8 +1030,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 50,
-    "displayOrder": 50,
+    "id": 35,
+    "displayOrder": 35,
     "filename": "mem_44.jpg",
     "url": "/photos/mem_44.jpg",
     "image": "/photos/mem_44.jpg",
@@ -1350,8 +1050,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 51,
-    "displayOrder": 51,
+    "id": 36,
+    "displayOrder": 36,
     "filename": "mem_45.jpg",
     "url": "/photos/mem_45.jpg",
     "image": "/photos/mem_45.jpg",
@@ -1370,8 +1070,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 52,
-    "displayOrder": 52,
+    "id": 37,
+    "displayOrder": 37,
     "filename": "mem_46.jpg",
     "url": "/photos/mem_46.jpg",
     "image": "/photos/mem_46.jpg",
@@ -1390,8 +1090,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 53,
-    "displayOrder": 53,
+    "id": 38,
+    "displayOrder": 38,
     "filename": "mem_47.jpg",
     "url": "/photos/mem_47.jpg",
     "image": "/photos/mem_47.jpg",
@@ -1410,8 +1110,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 54,
-    "displayOrder": 54,
+    "id": 39,
+    "displayOrder": 39,
     "filename": "mem_48.jpg",
     "url": "/photos/mem_48.jpg",
     "image": "/photos/mem_48.jpg",
@@ -1430,8 +1130,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 55,
-    "displayOrder": 55,
+    "id": 40,
+    "displayOrder": 40,
     "filename": "mem_49.jpg",
     "url": "/photos/mem_49.jpg",
     "image": "/photos/mem_49.jpg",
@@ -1450,8 +1150,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 56,
-    "displayOrder": 56,
+    "id": 41,
+    "displayOrder": 41,
     "filename": "mem_50.jpg",
     "url": "/photos/mem_50.jpg",
     "image": "/photos/mem_50.jpg",
@@ -1470,8 +1170,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 57,
-    "displayOrder": 57,
+    "id": 42,
+    "displayOrder": 42,
     "filename": "mem_51.jpg",
     "url": "/photos/mem_51.jpg",
     "image": "/photos/mem_51.jpg",
@@ -1490,8 +1190,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 58,
-    "displayOrder": 58,
+    "id": 43,
+    "displayOrder": 43,
     "filename": "mem_52.jpg",
     "url": "/photos/mem_52.jpg",
     "image": "/photos/mem_52.jpg",
@@ -1510,8 +1210,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 59,
-    "displayOrder": 59,
+    "id": 44,
+    "displayOrder": 44,
     "filename": "mem_53.jpg",
     "url": "/photos/mem_53.jpg",
     "image": "/photos/mem_53.jpg",
@@ -1530,8 +1230,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 60,
-    "displayOrder": 60,
+    "id": 45,
+    "displayOrder": 45,
     "filename": "mem_54.jpg",
     "url": "/photos/mem_54.jpg",
     "image": "/photos/mem_54.jpg",
@@ -1550,8 +1250,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 61,
-    "displayOrder": 61,
+    "id": 46,
+    "displayOrder": 46,
     "filename": "mem_55.jpg",
     "url": "/photos/mem_55.jpg",
     "image": "/photos/mem_55.jpg",
@@ -1570,8 +1270,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 62,
-    "displayOrder": 62,
+    "id": 47,
+    "displayOrder": 47,
     "filename": "mem_56.jpg",
     "url": "/photos/mem_56.jpg",
     "image": "/photos/mem_56.jpg",
@@ -1590,8 +1290,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 63,
-    "displayOrder": 63,
+    "id": 48,
+    "displayOrder": 48,
     "filename": "mem_57.jpg",
     "url": "/photos/mem_57.jpg",
     "image": "/photos/mem_57.jpg",
@@ -1610,8 +1310,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 64,
-    "displayOrder": 64,
+    "id": 49,
+    "displayOrder": 49,
     "filename": "mem_58.jpg",
     "url": "/photos/mem_58.jpg",
     "image": "/photos/mem_58.jpg",
@@ -1630,8 +1330,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 65,
-    "displayOrder": 65,
+    "id": 50,
+    "displayOrder": 50,
     "filename": "mem_59.jpg",
     "url": "/photos/mem_59.jpg",
     "image": "/photos/mem_59.jpg",
@@ -1650,8 +1350,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 66,
-    "displayOrder": 66,
+    "id": 51,
+    "displayOrder": 51,
     "filename": "mem_60.jpg",
     "url": "/photos/mem_60.jpg",
     "image": "/photos/mem_60.jpg",
@@ -1670,8 +1370,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 67,
-    "displayOrder": 67,
+    "id": 52,
+    "displayOrder": 52,
     "filename": "mem_61.jpg",
     "url": "/photos/mem_61.jpg",
     "image": "/photos/mem_61.jpg",
@@ -1690,8 +1390,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 68,
-    "displayOrder": 68,
+    "id": 53,
+    "displayOrder": 53,
     "filename": "mem_62.jpg",
     "url": "/photos/mem_62.jpg",
     "image": "/photos/mem_62.jpg",
@@ -1710,8 +1410,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 69,
-    "displayOrder": 69,
+    "id": 54,
+    "displayOrder": 54,
     "filename": "mem_63.jpg",
     "url": "/photos/mem_63.jpg",
     "image": "/photos/mem_63.jpg",
@@ -1730,8 +1430,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 70,
-    "displayOrder": 70,
+    "id": 55,
+    "displayOrder": 55,
     "filename": "mem_64.jpg",
     "url": "/photos/mem_64.jpg",
     "image": "/photos/mem_64.jpg",
@@ -1750,8 +1450,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 71,
-    "displayOrder": 71,
+    "id": 56,
+    "displayOrder": 56,
     "filename": "mem_65.jpg",
     "url": "/photos/mem_65.jpg",
     "image": "/photos/mem_65.jpg",
@@ -1770,8 +1470,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 72,
-    "displayOrder": 72,
+    "id": 57,
+    "displayOrder": 57,
     "filename": "mem_66.jpg",
     "url": "/photos/mem_66.jpg",
     "image": "/photos/mem_66.jpg",
@@ -1790,8 +1490,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 73,
-    "displayOrder": 73,
+    "id": 58,
+    "displayOrder": 58,
     "filename": "mem_67.jpg",
     "url": "/photos/mem_67.jpg",
     "image": "/photos/mem_67.jpg",
@@ -1810,8 +1510,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 74,
-    "displayOrder": 74,
+    "id": 59,
+    "displayOrder": 59,
     "filename": "mem_68.jpg",
     "url": "/photos/mem_68.jpg",
     "image": "/photos/mem_68.jpg",
@@ -1830,8 +1530,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 75,
-    "displayOrder": 75,
+    "id": 60,
+    "displayOrder": 60,
     "filename": "mem_69.jpg",
     "url": "/photos/mem_69.jpg",
     "image": "/photos/mem_69.jpg",
@@ -1850,8 +1550,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 76,
-    "displayOrder": 76,
+    "id": 61,
+    "displayOrder": 61,
     "filename": "mem_70.jpg",
     "url": "/photos/mem_70.jpg",
     "image": "/photos/mem_70.jpg",
@@ -1870,8 +1570,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 77,
-    "displayOrder": 77,
+    "id": 62,
+    "displayOrder": 62,
     "filename": "mem_71.jpg",
     "url": "/photos/mem_71.jpg",
     "image": "/photos/mem_71.jpg",
@@ -1890,8 +1590,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 78,
-    "displayOrder": 78,
+    "id": 63,
+    "displayOrder": 63,
     "filename": "mem_72.jpg",
     "url": "/photos/mem_72.jpg",
     "image": "/photos/mem_72.jpg",
@@ -1910,8 +1610,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 79,
-    "displayOrder": 79,
+    "id": 64,
+    "displayOrder": 64,
     "filename": "mem_73.jpg",
     "url": "/photos/mem_73.jpg",
     "image": "/photos/mem_73.jpg",
@@ -1930,8 +1630,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 80,
-    "displayOrder": 80,
+    "id": 65,
+    "displayOrder": 65,
     "filename": "mem_74.jpg",
     "url": "/photos/mem_74.jpg",
     "image": "/photos/mem_74.jpg",
@@ -1950,8 +1650,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 81,
-    "displayOrder": 81,
+    "id": 66,
+    "displayOrder": 66,
     "filename": "mem_75.jpg",
     "url": "/photos/mem_75.jpg",
     "image": "/photos/mem_75.jpg",
@@ -1970,8 +1670,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 82,
-    "displayOrder": 82,
+    "id": 67,
+    "displayOrder": 67,
     "filename": "mem_76.jpg",
     "url": "/photos/mem_76.jpg",
     "image": "/photos/mem_76.jpg",
@@ -1990,8 +1690,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 83,
-    "displayOrder": 83,
+    "id": 68,
+    "displayOrder": 68,
     "filename": "photo1.jpg",
     "url": "/photos/photo1.jpg",
     "image": "/photos/photo1.jpg",
@@ -2010,8 +1710,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 84,
-    "displayOrder": 84,
+    "id": 69,
+    "displayOrder": 69,
     "filename": "photo2.jpg",
     "url": "/photos/photo2.jpg",
     "image": "/photos/photo2.jpg",
@@ -2030,8 +1730,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 85,
-    "displayOrder": 85,
+    "id": 70,
+    "displayOrder": 70,
     "filename": "photo3.jpg",
     "url": "/photos/photo3.jpg",
     "image": "/photos/photo3.jpg",
@@ -2050,8 +1750,8 @@ export const memories: Memory[] = [
     "aspectRatio": "3/4"
   },
   {
-    "id": 86,
-    "displayOrder": 86,
+    "id": 71,
+    "displayOrder": 71,
     "filename": "photo4.jpg",
     "url": "/photos/photo4.jpg",
     "image": "/photos/photo4.jpg",
@@ -2070,8 +1770,8 @@ export const memories: Memory[] = [
     "aspectRatio": "4/3"
   },
   {
-    "id": 87,
-    "displayOrder": 87,
+    "id": 72,
+    "displayOrder": 72,
     "filename": "photo5.jpg",
     "url": "/photos/photo5.jpg",
     "image": "/photos/photo5.jpg",

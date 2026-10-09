@@ -112,7 +112,7 @@ export async function getMediaRecords(filter?: {
 }
 
 /**
- * Seed all 87 media items into MongoDB Atlas.
+ * Seed all media items into MongoDB Atlas.
  * Uses upsert by filename / id to prevent duplicate records.
  */
 export async function seedMediaRecords(): Promise<{
@@ -151,6 +151,12 @@ export async function seedMediaRecords(): Promise<{
     );
     processed++;
   }
+
+  // Remove any documents that are no longer in defaultMemories
+  const validFilenames = defaultMemories.map(
+    (item) => item.filename || item.image.replace('/photos/', '').replace('/videos/', '')
+  );
+  await collection.deleteMany({ filename: { $nin: validFilenames } });
 
   const totalCount = await collection.countDocuments();
 
